@@ -1,0 +1,3 @@
+fuente de la base del proyecto
+
+https://www.bezkoder.com/django-postgresql-crud-rest-framework/
