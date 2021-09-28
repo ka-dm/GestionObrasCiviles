@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 import django_heroku
+import dj_database_url
+from decouple import config
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
@@ -80,7 +82,7 @@ DATABASES = {
 }
 '''
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -98,8 +100,6 @@ DATABASES = {
         default=config('DATABASE_URL')
     )
 }
-'''
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
