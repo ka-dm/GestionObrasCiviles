@@ -1,4 +1,4 @@
-apturl==0.5.2
+apturl
 asgiref==3.4.1
 bcrypt==3.1.7
 blinker==1.4
@@ -17,8 +17,8 @@ distro-info==1.0
 dj-database-url==0.5.0
 Django==3.2.7
 django-cors-headers==3.8.0
-djangorestframework==3.12.4
 django-heroku==0.3.1
+djangorestframework==3.12.4
 duplicity==0.8.17
 fasteners==0.14.1
 future==0.18.2
