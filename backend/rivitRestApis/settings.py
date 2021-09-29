@@ -94,7 +94,21 @@ DATABASES = {
     }
 }
 
+DATABASE_URL: postgres://postgres:123@127.0.0.1:5432/testbd
+heroku config:set DATABASE_URL="postgresql://postgres:123@127.0.0.1:5432/testbd"
+
+web: gunicorn rivitRestApis.wsgi --log-file -
 '''
+'''
+DATABASE_URL of Heroku
+USER = dbhovyclvwevhc
+PASSWORD = d19e3d5c1fa7bc30a0900a36cb6e27a634f75208f16d260ae126e19ae8676a57
+HOST = ec2-100-24-169-249.compute-1.amazonaws.com
+PORT = 5432
+NAME = d5f9f189655krb
+'''
+
+
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
@@ -154,5 +168,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static')
 )
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
